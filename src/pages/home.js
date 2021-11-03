@@ -28,8 +28,8 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         </div>
         <div  class="logo">
             <img class="imagen" src="developer.jpg"></img>
-            <p>Soy un desarrollador con experiencia en backend y actualmente aprendiendo conceptos de frontend 
-            apasionado por la tecnologia y el desarrollo</p>
+            <h1>Soy un desarrollador con experiencia en backend y actualmente aprendiendo conceptos de frontend 
+            apasionado por la tecnologia y el desarrollo</h1>
         </div>
       </div>
     }
