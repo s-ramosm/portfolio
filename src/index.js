@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Menu from './componentes/navbar/menu'
+import Home from './pages/home'
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Menu seleccionado = "Home" />
   </React.StrictMode>,
   document.getElementById('root')
 );

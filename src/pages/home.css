@@ -1,0 +1,32 @@
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "portfolio logo logo"
+      "portfolio data data"
+      "portfolio data data"; 
+    
+    width : 80%;
+    padding : 1% 10% 0 10%;
+  }
+  .portfolio { grid-area: portfolio; border : solid 1px black; padding:5% }
+  .data { grid-area: data; border : solid 1px black; padding:5% }
+  .logo { grid-area: logo; border : solid 1px black; padding:5%; display: 'flex';
+    flex-direction: 'row'}
+
+
+.imagen {
+    width : 30%;
+    height  :auto;
+}
+
+  @media screen and (max-width : 500px){
+      .container {
+        grid-template-areas: 
+        "logo logo logo"
+        "portfolio portfolio portfolio"
+        "data data data";
+      }
+  }
