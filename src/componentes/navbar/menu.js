@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import Home from '../../pages/home';
 import Productos from '../../pages/productos';
-import './navbar_style.css'
-
+import './navbar_style.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAddressBook, faFolderOpen, faHome } from '@fortawesome/free-solid-svg-icons';
 
 import {
     BrowserRouter as Router,
@@ -25,7 +26,7 @@ export default class Menu extends Component {
 
         const link = "/".concat('',props.nombre.toLowerCase())
 
-        return <NavLink className="item" activeClassName="selected" to = {"/".concat(props.nombre)}>{props.nombre}</NavLink>
+        return <NavLink className="item" activeClassName="selected" to = {"/".concat(props.nombre)}> <FontAwesomeIcon icon={props.icon}/>  {props.nombre}</NavLink>
     }
 
     state = {
@@ -35,12 +36,18 @@ export default class Menu extends Component {
     render(){
         
         return <div>
+
+                
+                <FontAwesomeIcon icon={["far", "coffee"]} />
+                <FontAwesomeIcon icon={["fas", "coffee"]} />
+                <FontAwesomeIcon icon="coffee" />
+                <FontAwesomeIcon icon={["fab", "github"]} />
                 <Router>
                     <nav style={general_style}>
 
-                        <this.menuItem nombre ="Home"  seleccionado = {this.props.seleccionado} />
-                        <this.menuItem nombre ="Productos" seleccionado = {this.props.seleccionado} />
-                        <this.menuItem nombre ="Contacto" seleccionado = {this.props.seleccionado} />
+                        <this.menuItem nombre ="Home" icon ={faHome} />
+                        <this.menuItem nombre ="Productos" icon = {faFolderOpen}  />
+                        <this.menuItem nombre ="Contacto"  icon = {faAddressBook} />
 
                     </nav>
                     
@@ -55,7 +62,7 @@ export default class Menu extends Component {
                             <Productos />
                         </Route>
                         
-                        <Route path="/contacto">
+                        <Route path="/contacto"> 
                             <Home/>
                         </Route>
 

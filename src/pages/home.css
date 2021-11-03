@@ -1,20 +1,39 @@
 .container {
+
+    background-color: #0b0c10;
+    color : #c5c6c7;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
-      "portfolio logo logo"
+      "logo logo logo"
       "portfolio data data"
       "portfolio data data"; 
+    padding: 2%;
     
-    width : 80%;
-    padding : 1% 10% 0 10%;
   }
-  .portfolio { grid-area: portfolio; border : solid 1px black; padding:5% }
-  .data { grid-area: data; border : solid 1px black; padding:5% }
-  .logo { grid-area: logo; border : solid 1px black; padding:5%; display: 'flex';
-    flex-direction: 'row'}
+  .portfolio { 
+              grid-area: portfolio; 
+              border : solid 1px black; 
+              padding:5% 
+            }
+  
+  
+  .data { 
+    grid-area: data; 
+    border : solid 1px black; 
+    padding:5% 
+  }
+  
+  
+  .logo { 
+    grid-area: logo; 
+    border : solid 1px black;
+    padding:5%; 
+    display: flex;
+    flex-direction: 'row'
+  }
 
 
 .imagen {
@@ -29,4 +48,13 @@
         "portfolio portfolio portfolio"
         "data data data";
       }
+
+      .logo { 
+        flex-direction: 'column';
+      }
+
+      .imagen {
+        width : 100%;
+        height  :50%;
+    }
   }
