@@ -4,12 +4,13 @@
     color : #c5c6c7;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-rows: 0.1fr 1fr 1fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
+      "mainTittle mainTittle mainTittle"
       "logo logo logo"
-      "portfolio data data"
-      "portfolio data data"; 
+      "data portfolio portfolio"
+      "data portfolio portfolio"; 
     padding: 2%;
     
   }
@@ -17,7 +18,12 @@
               grid-area: portfolio; 
               border : solid 1px black; 
               padding:5% 
-            }
+    }
+
+  .mainTittle { 
+    grid-area: mainTittle; 
+    border : solid 1px black;
+  }
   
   
   .data { 
@@ -44,6 +50,7 @@
   @media screen and (max-width : 500px){
       .container {
         grid-template-areas: 
+        "mainTittle mainTittle mainTittle"
         "logo logo logo"
         "portfolio portfolio portfolio"
         "data data data";
@@ -58,3 +65,8 @@
         height  :50%;
     }
   }
+
+.tittle {
+  padding : 5% 5% 5% 5%;
+  text-align: center;
+}

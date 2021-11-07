@@ -18,13 +18,6 @@ export default class Menu extends Component {
     
     
     menuItem(props) {
-        
-        
-
-
-        
-
-        const link = "/".concat('',props.nombre.toLowerCase())
 
         return <NavLink className="item" activeClassName="selected" to = {"/".concat(props.nombre)}> <FontAwesomeIcon icon={props.icon}/>  {props.nombre}</NavLink>
     }
