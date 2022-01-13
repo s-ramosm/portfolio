@@ -5,10 +5,25 @@ import reportWebVitals from './reportWebVitals';
 import Menu from './componentes/navbar/menu'
 
 
+class Doc extends React.Component{
+  componentDidMount(){
+    document.title = "ParzivalPY"
+  }
+
+  render(){
+    return(
+      <b></b>
+    )
+  }
+}
+
 
 
 ReactDOM.render(
+
+  
   <React.StrictMode>
+    <Doc />
     <Menu seleccionado = "Home" />
   </React.StrictMode>,
   document.getElementById('root')

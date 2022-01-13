@@ -14,46 +14,32 @@ import {
 
 
 export default class Menu extends Component {
-
-    
-    
     menuItem(props) {
 
         return <NavLink className="item" activeClassName="selected" to = {"/".concat(props.nombre)}> <FontAwesomeIcon icon={props.icon}/>  {props.nombre}</NavLink>
     }
-
     state = {
         seleccionado :"Home"
     }
-
     render(){
         
         return <div>
-
                 
-                <FontAwesomeIcon icon={["far", "coffee"]} />
-                <FontAwesomeIcon icon={["fas", "coffee"]} />
-                <FontAwesomeIcon icon="coffee" />
-                <FontAwesomeIcon icon={["fab", "github"]} />
-                <Router>
+                <Router className = "Router">
                     <nav style={general_style}>
-
                         <this.menuItem nombre ="Home" icon ={faHome} />
-                        <this.menuItem nombre ="Productos" icon = {faFolderOpen}  />
+                        {/* <this.menuItem nombre ="Productos" icon = {faFolderOpen}  /> */}
                         <this.menuItem nombre ="Contacto"  icon = {faAddressBook} />
-
                     </nav>
-                    
-
                     <Switch>
                         
                         <Route path="/Home">
                             <Home />
                         </Route>
 
-                        <Route path="/productos">
+                        {/* <Route path="/productos">
                             <Productos />
-                        </Route>
+                        </Route> */}
                         
                         <Route path="/contacto"> 
                             <Home/>
@@ -79,7 +65,7 @@ const general_style =  {
     color :  '#ffffff',
     display: 'flex',
     flexDirection: 'row',
-    padding : '0 10px 0 10px'
-
+    padding : '0 10px 0 10px',
+    alignItems : 'center'
 }
 
