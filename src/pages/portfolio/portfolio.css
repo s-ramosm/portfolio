@@ -15,7 +15,9 @@
 .proyect{
     display: flex;
     border-radius: 30px 30px 30px 30px;
+    overflow:hidden;
 }
+
 
 .card-head{
     background-color: #000;

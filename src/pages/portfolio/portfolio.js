@@ -25,7 +25,6 @@ class CardProductPortfolio extends Component {
                 <FaGithub /><a className="text-icon" href= {this.props.github}>Github</a> <br/>
                 <BiWorld /><a  className="text-icon" href= {this.props.link}>Proyecto</a>
                 </div>
-                
             </div>
 
         </div>
