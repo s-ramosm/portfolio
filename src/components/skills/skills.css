@@ -1,0 +1,53 @@
+.carousell_container{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 100%; /* Ancho del contenedor, ajusta según tus necesidades */
+    flex-wrap: nowrap;
+    width: 95%;
+    padding: 0 3% 0 3%;
+    overflow: hidden;
+}
+
+.icon{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 3px;
+    border-radius: 100%;
+    width: 50px; /* Ancho fijo del contenedor del icono */
+    height: 50px; /* Altura fija del contenedor del icono */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 8px;  */
+    margin-top: 8px;
+}
+
+.card_skill{
+    width: 250px;
+    height: 250px;
+    min-width: 250px;
+    min-height: 250px;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    
+}
+
+.technical_skills_container{
+    margin: 3%;
+}
+
+@keyframes show {
+    from {
+        opacity: 0; scale: 10%;
+    }
+    to {
+        opacity: 1; scale: 100%;
+    }
+}
+

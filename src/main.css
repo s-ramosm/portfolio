@@ -1,0 +1,20 @@
+/* :root {
+    --primary-color: #d8d8d8;  
+    --secondary-color: #cdf348; 
+    --background-color: #b3b3b3; 
+    --text-color: #21212f;     
+} */
+
+:root {
+    --primary-color: #f8f7f3; 
+    --secondary-color: #f2b540; 
+    --background-color: #020202; 
+    --text-color: #020202;     
+}
+
+/* :root {
+    --primary-color: #899c79; 
+    --secondary-color: #f2fa9b; 
+    --background-color: #020202;
+    --text-color: #1f2e13;     
+} */

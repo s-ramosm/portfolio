@@ -1,32 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './index.css';
+import './main.css'
 import reportWebVitals from './reportWebVitals';
-import Menu from './componentes/navbar/menu'
+
+import Home from './pages/home/home';
 
 
-class Doc extends React.Component{
-  componentDidMount(){
-    document.title = "ParzivalPY"
-  }
-
-  render(){
-    return(
-      <b></b>
-    )
-  }
-}
-
-
-
-ReactDOM.render(
-
-  
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-    <Doc />
-    <Menu seleccionado = "Home" />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <Home></Home>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

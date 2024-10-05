@@ -1,0 +1,91 @@
+.presentation_card_container {
+    padding: 1%;   
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #b3b3b3;
+    margin: 50px;
+    border-radius: 15px;
+}
+
+.presentation_card_container img {
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    border-radius: 100%;
+    /* border: solid #b3b3b3; */
+
+}
+
+.presentation_card_data {
+    font-size: large;
+}
+
+.item_container {
+    padding: 5px 10px 5px 10px;
+    font-size: large;
+    border: solid 1px var(--text-color);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 8px;
+}
+
+.roles {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 8px; 
+}
+
+.cv_container{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 8px;
+    gap: 16px;
+}
+
+.cv_container .item{
+    padding: 8px;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    gap: 8px;
+    border-radius: 16px;
+    vertical-align: middle;
+    font-style: italic;
+    font-size: small ;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.cv_container .item img{
+    border-radius: 0;
+    height: 90%;
+    width: auto;
+    margin: 0;
+}
+
+.cv_container .item a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.ColorSelector{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    border: solid 1px;
+    margin: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.ColorSelector div{
+    width: 20%;
+    height: 90%;
+}

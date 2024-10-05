@@ -1,0 +1,7 @@
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    align-items: center;
+    justify-content: center;
+    font-size: smaller;
+}
